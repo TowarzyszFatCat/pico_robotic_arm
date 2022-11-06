@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        html { font-family: Helvetica; display: inline-block; text-align: center;}
+            .form_div {background-color: gray; height: 350px; width: 1000px; margin: 10px; padding-top: 30px;}
+            .plus { background-color: white; color: black; border: 3px solid green; text-align: center; width: 50px; height: 50px; margin-bottom: 20px;}
+            .minus { background-color: white; color: black; border: 3px solid red; text-align: center; width: 50px; height: 50px; margin-bottom: 20px;}
+            .form {float: left; width: 300px; background-color: gainsboro; margin: 13px}
+            .form_div_in {margin: 10px;}
+            b {font-size: 30px;}
+            h2 {font-size: 20px; margin-top: 20px; text-align: center;}
+            h1 {text-align: center;}
+            h3 {text-align: center; font-size: 20px;}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="form_div">
+
+        <h1>PANEL STEROWANIA</h1>
+
+        <div class="form_div_in">
+            <form class="form">
+                <h2>OBRÓT</h2> <BR></BR>
+                <button class="plus" name="servo1" value="plus1" type="submit"><b>+</b></button>
+                <button class="minus" name="servo1" value="minus1" type="submit"><b>-</b></button>
+                <br> <h3>%s</h3>
+            </form>
+            
+            <form class="form">
+                <h2>POCHYLENIE 1</h2> <BR></BR>
+                <button class="plus" name="servo2" value="plus2" type="submit"><b>+</b></button>
+                <button class="minus" name="servo2" value="minus2" type="submit"><b>-</b></button>
+                <br> <h3>%s</h3>
+            </form>
+            
+            <form class="form">
+                <h2>POCHYLENIE 2</h2> <BR></BR>
+                <button class="plus" name="servo3" value="plus3" type="submit"><b>+</b></button>
+                <button class="minus" name="servo3" value="minus3" type="submit"><b>-</b></button>
+                <br> <h3>%s</h3>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
