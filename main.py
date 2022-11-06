@@ -4,8 +4,11 @@ import network
 import socket
 from machine import Pin, PWM
 
+from pass_data import *
+
 min_duty = 1350
 max_duty = 8200
+
 add_remove = 137
 
 
@@ -30,16 +33,12 @@ servo3.duty_u16(act3)
 
 
 
-
 led = Pin(15, Pin.OUT)
 led.value(0)
 
-ssid = 'SSID'
-password = 'PASSWORD'
-
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
-wlan.connect(ssid, password)
+wlan.connect(ssid, password)    # From file pass_data.py
 
 page = open("index.html", "r")
 html = page.read()
@@ -144,3 +143,4 @@ while True:
         led.value(0)
         cl.close()
         print('connection closed')
+
